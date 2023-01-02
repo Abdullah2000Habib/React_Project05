@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Home from './components/Home';
 import "./main.css";
 
@@ -8,13 +7,9 @@ import "./main.css";
 
 function App() {
   return (
-
-    <>
-
-    <Home/>
-
-    </>
-          
+    <div className='App'>
+        <Home/>
+    </div>
   );
   
   }
