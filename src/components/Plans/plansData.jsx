@@ -1,5 +1,6 @@
 export const plansData = [
-  {
+  { 
+    id:1,
     icon: (
       <svg
         width="15"
@@ -19,6 +20,7 @@ export const plansData = [
     ],
   },
   {
+    id:2,
     icon: (
       <svg
         width="28"
@@ -38,6 +40,7 @@ export const plansData = [
     ],
   },
   {
+    id:3,
     icon: (
       <svg
         width="16"
