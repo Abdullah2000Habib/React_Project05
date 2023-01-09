@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './Footer';
 import Hero from './Hero/Hero';
 import Join from './Join/Join';
 import Plans from './Plans/Plans';
@@ -15,6 +16,7 @@ return (
         <Plans />
         <Testimonials />
         <Join />
+        <Footer />
     </>
 )
 }
