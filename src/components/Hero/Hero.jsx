@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from 'react';
 import calories from "../../assets/calories.png";
 import heart from "../../assets/heart.png";
@@ -6,6 +7,7 @@ import heroImgBack from "../../assets/hero_image_back.png";
 import Header from '../Header/Header';
 import style from "./style.module.css";
 export default function Hero() {
+  const transition = {type:"spring",duration:3}
 return (
   <div>
       <div className={style.hero}>
@@ -14,7 +16,11 @@ return (
           <Header/>
           {/* The Best Ad */}
           <div className={style.theBest}>
-            <div></div>
+            <motion.div
+            initial={{left:"238px"}}
+            whileInView={{left:"8px"}}
+            transition={{...transition,type:"tween"}}
+            ></motion.div>
             <span>THE BEST FITNESS CLUB IN THE TOWN</span>
           </div>
           {/* Hero Heading */}
@@ -53,22 +59,34 @@ return (
         </div>
         <div className={style.right}>
           <button className='btn'>Join Now</button>
-          <div className={style.heartRate}>
+          <motion.div
+          className={style.heartRate}
+          initial={{right:"-1rem"}}
+          whileInView={{right:"4rem"}}
+          transition={transition}>
             <img src={heart} alt="heart"/>
             <span>Heart Rate</span>
             <span>116 bpm</span>
-          </div>
+          </motion.div>
           {/* Hero Images */}
           <img src={heroImg} alt="hero Img" className={style.heroImage}/>
-          <img src={heroImgBack} alt="hero Img Back" className={style.heroImageBack}/>
+          <motion.img
+          initial={{right:"11rem"}}
+          whileInView={{right:"20rem"}}
+          transition={transition}
+          src={heroImgBack} alt="hero Img Back" className={style.heroImageBack}/>
           {/* Calories  */}
-          <div className={style.calories}>
+          <motion.div className={style.calories}
+          initial={{right:"37rem"}}
+          whileInView={{right:"28rem"}}
+          transition={transition}
+          >
             <img src={calories} alt="calories" />
             <div>
                 <span>Calories burned</span>
                 <span>220 kcal</span>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
   </div>
