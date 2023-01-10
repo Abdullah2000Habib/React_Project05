@@ -21,6 +21,7 @@
     "framer-motion": "^8.0.2",
     "gh-pages": "^4.0.0",
     "module-alias": "^2.2.2",
+    "number-counter": "^1.0.3",
     "react": "^18.2.0",
     "react-compare-image": "^3.3.0",
     "react-dom": "^18.2.0",
