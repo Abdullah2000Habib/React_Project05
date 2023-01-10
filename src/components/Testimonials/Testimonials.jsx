@@ -10,7 +10,7 @@ export default function Testimonials() {
     const tLength = testimonialsData.length;
 return (
     <>
-        <div className={style.testimonials}>
+        <div className={style.testimonials} id="testimonials">
             <div className={style.left}>
                 <span>TESTIMONIALS</span>
                 <span className='storke-text'>WHAT THEY</span>

@@ -5,7 +5,7 @@ import style from "./style.module.css";
 export default function Plans() {
 return (
     <>
-        <div className={style.plansContainer}>
+        <div className={style.plansContainer} id="plans">
             <div className={`blur ${style.plansBlur1}`}></div>
             <div className={`blur ${style.plansBlur2}`}></div>
             <div className={style.plansHeader}>
