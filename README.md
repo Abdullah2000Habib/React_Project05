@@ -1,5 +1,5 @@
 # demo
-Open [https://amazonproject.pages.dev/](https://amazonproject.pages.dev/) to view project.
+Open [https://fitclupgym.pages.dev/](https://fitclupgym.pages.dev/) to view project.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
